@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insertar Imagenes</title>
+</head>
+
+<body>
+    <!--
+        Tipos de imágenes
+            Vectores: no dependen de la resolución, usados con pocos colores puntuales y formas definidas
+            Pixeles:  sujetos a la resolución original, usados en fotos normales con muchos colores continuos
+
+        Formatos Pixeles
+            jpg: Miles de colores, no transparencia
+            gif: Paleta indexada de 256 tonos, 2 transparencia: opaco o transparente
+            png: 8 bits => Paleta indexada de 256 tonos, 2 transparencia: opaco o transparente
+                24 bits => Miles de colores, 256 tonos de transparencia 
+
+        Formatos Vectores
+            svg: en formato xml
+             
+
+        Imagen que toma el tamaño de la imagen original
+        <img src="ruta/imagen.jpg" alt="descripcion">
+
+        Que se muestre una imagen dependiendo del tamaño de la pantalla
+        <picture>
+            <source media="(max-width:600px)" srcset="util/img/imagen.jpg">
+            <source media="(max-width:850px)" srcset="util/img/imagen.jpg">
+            <img src="util/img/imagen.jpg" alt="descripcion">
+        </picture>
+
+        Las imagenes svg se adaptan al tamaño del contenedor
+
+        EL TAMAÑO SE PUEDE CONFIGURAR EN CSS
+
+    -->
+
+    <img src="util/img/epn_338.png" alt="Imagen epn" width="500px">
+    <img src="util/img/epn_550.png" alt="Imagen epn">
+    <picture>
+        <source media="(max-width:600px)" srcset="util/img/imagen_grande_epn_600.jpeg">
+        <source media="(max-width:900px)" srcset="util/img/imagen_grande_epn_900.jpeg">
+        <img src="util/img/imagen_grande_epn.jpeg" alt="EPN">
+    </picture>
+    
+</body>
+
+</html>

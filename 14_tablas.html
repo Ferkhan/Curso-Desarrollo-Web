@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+
+<body>
+    <!-- 
+        Tablas | Filas | Celdas
+
+        Primero definir las filas y luego las celdas
+
+        Elementos
+            tr = Row
+            th = Header
+            td = Date (Celda)
+            caption = Titulo de la tabla
+
+        Atributos
+            colspan = cantidad de celdas que puede abarcar (int)
+            rowspan = cantidad de celdas que puede abarcar (int)
+    -->
+
+    <table border="1">
+        <caption>Estudiantes de la EPN</caption>
+        <tr>
+            <th>Nombre</th>
+            <th>Facultad</th>
+            <th>Carrera</th>
+            <th>Semestre</th>
+        </tr>
+        <tr>
+            <td>Fernando</td>
+            <td>FIS</td>
+            <td>Software</td>
+            <td>Tercero</td>
+        </tr>
+        <tr>
+            <td>Alexander</td>
+            <td>FIEE</td>
+            <td>Electrónica</td>
+            <td>Primero</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <caption>Nombre Completo</caption>
+        <tr>
+            <th>Nombre</th>
+            <th colspan="2">Apellido</th>
+        </tr>
+        <tr>
+            <td>Fernando</td>
+            <td>Nagua</td>
+            <td>Uyaguari</td>
+        </tr>
+    </table>
+    
+    <table border="1">
+        <caption>Nombre Completo</caption>
+        <tr>
+            <th>Nombre:</th>
+            <td>Fernando</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Apellidos:</th>
+            <td>Nagua</td>
+        </tr>
+        <tr>
+            <td>Uyaguari</td>
+        </tr>
+    </table>
+</body>
+
+</html>

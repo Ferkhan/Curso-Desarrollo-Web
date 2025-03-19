@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertar video</title>
+</head>
+
+<body>
+    <!-- 
+        Formatos
+            mp4
+            ogg
+            webm: no funcina en Safari
+            
+        Lo que antes se hacía
+            <video>
+                    se utililza para ingresar el mismo video en diferentes formatos 
+                <source src="videos/video.ogg" type="video/ogg">
+                <source src="videos/video.mp4" type="video/mp4">
+                <source src="videos/video.webm" type="video/webm">
+                    para incluir subtítulos 
+                <track src="videos/subtitulo.vtt" kind="subtitles" srclang="es" label="Español">
+                    se muestra cuando no se puede reproducir el video
+                TU NAVEGADOR NO ADMITE EL ELEMENTO
+            </video>
+
+        Lo que se hace actualmente
+            <video src="ruta/nombre_video.mp4"  poster="ruta/nombre_imagen_portada.jpg" autoplay controls>
+                <track src="videos/subtitulo.vtt" kind="subtitles" srclang="es" label="Español">
+                Tu navegador no admite el elemento, utiliza otro navegador
+            </video>
+
+        Atributos
+            autoplay:   el video se reproduce al abrir la página (boolean)
+            controls:   botones de reproducir, etc (boolean)
+            heigth:     tamaño horizontal (int)
+            width:      tamaño vertical   (int)
+            loop:       reproducción en bucle (boolean)
+            muted:      empieza el video muteado (boolean)
+            poster:     imagen de previsualización, portada (url img)
+            preload:    si el video se carga antes de darle al play (auto, metadata, none)
+            src:        direccion del video (url vid)
+                    
+     -->
+
+
+    <h1>Video</h1>
+    <video src="util/vid/video_danza.mp4" poster="util/img/imagen_grande_epn_600.jpeg"  heigth="800px" controls>
+        Tu navegador no admite el elemento, utiliza otro navegador
+    </video>
+
+</body>
+
+</html>

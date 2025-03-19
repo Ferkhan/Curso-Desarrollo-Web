@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- 
+    Un atributo puede ser comun o booleano
+    común - atributo = "valor"
+    booleano - atributo 
+-->
+<!-- Para cambiar el idioma del documento con el que se trabaja -->
+<html lang="es"> 
+
+<head>
+    <!-- Para cambiar los simbolos permitidos -->
+    <meta charset="UTF-8">
+    <title>Atributos globales</title>
+
+    <!-- Para hacer cambios con CSS -->
+    <style>
+        .parrafo-1 {
+            color: #e24510
+        }
+
+        .parrafo-2 {
+            color: #0c8330
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+
+        Algunos atributos globales estan disponibles para la mayoria de etiquetas en HTML
+        
+        class = se usa para dar estilos a traves de CSS
+
+        id = es un identificador unico que se utiliza para seleccionar el elemento desde JS y para hacer navegacion a traves de anclas
+
+        title = ayuda a la accesibilidad mostrando una descripcion del elemento al que pertenece en la pantalla con solo solo pasar el mouse por encima del contenido
+
+        data-* = nos permite guardar algun valor en la etiqueta HTML
+
+    -->
+    <p class='parrafo-1'>Clases</p>
+
+    <p class='parrafo-2' id='parrafo'>Identificador a traves de un ID</p>
+
+    <p class='parrafo-1' title='esto es un title'>Titulo con tooltip</p>
+
+    <!-- Para JavaS se usa mucho y es muy importante el atributo 'data-*' -->
+    <p class='parrafo-2' id='parrafo-2' data-ejemplo='Datos de ejemplo'>Datos pasados en la etiqueta</p>
+
+    <!-- Para hacer cambios con Java Script -->
+    <script>
+        const p = document.getElementById('parrafo')
+        const parrafo2 = document.getElementById('parrafo-2')
+        console.log(p.textContent)
+        console.log(parrafo2.dataset.ejemplo)
+    </script>
+
+</body>
+
+</html>
