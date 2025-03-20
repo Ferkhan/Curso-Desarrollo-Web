@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Básico</title>
+</head>
+
+<body>
+    <h1>Formulario en HTML</h1>
+    <!--  
+        Atributos
+            action  = archivo que procesa la información en el servidor (php, etc)
+            taget   = si se abre una página nueva o se refresca la misma
+            method  = la forma en la que se mandan los datos (post: más info y discreto, get: menos info y se observa la info en la url)
+            autocomplete = guarda string usados anteriormente (on, off)
+
+        Elementos
+                required: necesario llenar antes de enviar (boolean)
+
+            label = etiquetas que sirven de títulos para un input
+                for: el id que se liga a un elemento
+                
+            input = para que el usuario ingrese datos
+                type: tipo de dato
+                id:   identificador, relacionado con label
+                name: nombre variable que almacena el dato
+                placeholder: similar a un hint, string oculto, se muestra cuando está vacío
+                list: referencia el id de un datalist
+
+            fieldset = agrupa elementos
+                legend = subtítulo del fielset
+
+            select = permite seleccionar datos establecidos     
+                name: nombre variable que almacena el dato
+                id: identificador
+                size: cantidad de opciones a mostrar
+                multiple: si se desea elegir multiples opciones
+
+                option = opción a presentar
+                    value: valor que se almacena o envía
+                    selected: opción predefinida
+                
+                optgroup = agrupa opciones
+                    label: encabezado de la agrupación
+
+            textarea = campo de texto grande para escritura de info
+                name: nombre variable que almacena el dato
+                id: identificador
+                cols: tamaño horizontal
+                rows: tamaño vertical
+
+            datalist = presenta un listado de opciones a escribir
+                id: identificador
+
+                option = opción a presentar
+                    value: valor que se almacena o envía
+
+            button = boton con diferentes funciones
+                type: accion que hace (reset: borra toda la info, submit: envía la info, button: configurar su funcion con )
+            
+            output =
+
+    -->
+
+    <form action="archivoProcesaInfo.php" target="_blank" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Ingreso de datos</legend>
+            <label for="ingreso_nombre">Nombre:</label>
+            <input type="text" id="ingreso_nombre" name="userNombre" placeholder="Ingrese su nombre">
+            <label for="ingreso_apellido">Apellido:</label>
+            <input type="text" id="ingreso_apellido" name="userApellido" placeholder="Ingrese su primer apellido">
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Selección única</legend>
+            <label for="ingreso_genero">Genero: </label>
+            <select name="userGenero" id="ingreso_genero">
+                <option value="noSelect" selected>Seleccione una opción...</option>
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="noDecir">Prefiero no decir</option>
+            </select>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Selección múltiple</legend>
+            <label for="ingreso_colores">Colores favoritos</label>
+            <select name="userColors" id="ingreso_colores" size="10" multiple>
+                <option value="noSelet" seleted>Selecciones mínimo 3 opciones...</option>
+                <option value="amarillo">Amarillo</option>
+                <option value="verde">Verde</option>
+                <option value="azul">Azul</option>
+                <option value="morado">Morado</option>
+                <option value="celeste">Celeste</option>
+                <option value="rosado">Rosado</option>
+                <option value="rojo">Rojo</option>
+                <option value="gris">Gris</option>
+                <option value="blanco">Blanco</option>
+                <option value="negro">Negro</option>
+                <option value="naranja">Naranja</option>
+                <option value="fuxia">Fuxia</option>
+                <option value="cafe">Café</option>
+            </select>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Campo de Texto</legend>
+            <label for="ingreso_texto">Describa en 100 palabras su experiencia: <br></label>
+            <textarea name="userDescription" id="ingreso_texto" cols="50" rows="10"></textarea>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Agrupación de opciones</legend>
+            <label for="ingreso_animal">Escoja su animal favorito:</label>
+            <select name="userAnimal" id="ingreso_animal">
+                <option value="noSelect" selected>Seleccione una opción...</option>
+                <optgroup label="Animales terrestres">
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="ardilla">Ardilla</option>
+                    <option value="gusano">Gusano</option>
+                </optgroup>
+                <optgroup label="Animales acuáticos">
+                    <option value="ballena">Ballena</option>
+                    <option value="pezPayaso">Pez Payaso</option>
+                    <option value="medusa">Medusa</option>
+                    <option value="tiburon">Tiburón</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Ayuda en tipado</legend>
+            <label for="ingreso_ciudad">Capital latinoamericana preferida:</label>
+            <input list="ciudades" name="userCity" id="ingreso_ciudad">
+            <datalist id="ciudades">
+                <option value="Bogotá">
+                <option value="Lima">
+                <option value="Quito">
+                <option value="Caracas">
+                <option value="Brasilia">
+                <option value="Motevideo">
+                <option value="Buenos Aires">
+                <option value="Asunción">
+                <option value="La Paz">
+            </datalist>
+        </fieldset>
+        <br>
+
+        <button type="reset">Borrar</button>
+        <button type="button">Botón</button>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>

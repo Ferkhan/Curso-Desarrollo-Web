@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento Input</title>
+</head>
+
+<body>
+    <h1>Tipos de Input</h1>
+
+    <!-- 
+        input = para que el usuario ingrese datos
+            type: tipo de dato
+            id:   identificador, relacionado con label
+            name: nombre variable que almacena el dato
+            placeholder: similar a un hint, string oculto, se muestra cuando está vacío
+            list: referencia el id de un datalist
+            required: necesario llenar antes de enviar (boolean)
+            value: valor asignado
+    -->
+
+    <form method="get">
+
+        <fieldset>
+            <legend>Inputs de texto</legend>
+    
+            <label for="ing_texto">Texto:</label>
+            <input type="text" name="userTexto" id="ing_texto">
+            <br><br>
+    
+            <label for="ing_clave">Password:</label>
+            <input type="password" name="userClave" id="ing_clave">
+            <br><br>
+    
+            <label for="ing_email">Email:</label>
+            <input type="email" name="userEmail" id="ing_email">
+            <br><br>
+    
+            <label for="ing_telefono">Teléfono:</label>
+            <input type="tel" name="userTelefono" id="ing_telefono">
+            <br><br>
+    
+            <label for="ing_numero">Número:</label>
+            <input type="number" name="userNumber" id="ing_numero">
+            <br>
+    
+            <label for="ing_numero_intervalo">Intervalo [1,15]:</label>
+            <input type="number" name="userIntervalo" id="ing_numero_intervalo" min="1" max="15">
+            <br>
+    
+            <label for="ing_numero_step">Step (3)</label>
+            <input type="number" name="userStep" id="ing_numero_step" step="3">
+            <br><br>
+    
+            <label for="ing_search">Busqueda:</label>
+            <input type="search" name="numSearch" id="ing_search">
+            <br><br>
+        </fieldset><br>
+    
+        <fieldset>
+            <legend>Inputs de elección</legend>
+    
+            <p>Radio Button <br></p>
+            <input type="radio" name="userRadio" id="radio1" value="hombre">
+            <label for="radio1">Hombre</label>
+            <input type="radio" name="userRadio" id="radio2" value="mujer">
+            <label for="radio2">Mujer</label><br>
+            <label for="radio3">Prefiero no decir</label>
+            <input type="radio" name="userRadio" id="radio3" value="noDecir" disabled>
+            <br><br>
+    
+            <p>Checkbox</p>
+            <input type="checkbox" name="checkbox1" id="checkbox1" value="opcion1">
+            <label for="checkbox1">Opción 1</label>
+            <input type="checkbox" name="checkbox2" id="checkbox2" value="opcion2">
+            <label for="checkbox2">Opción 2</label>
+            <input type="checkbox" name="checkbox3" id="checkbox3" value="opcion3" disabled>
+            <label for="checkbox3">Opción 3</label>
+        </fieldset><br>
+    
+        <fieldset>
+            <legend>Input de Color</legend>
+    
+            <label for="ig_color">Color:</label>
+            <input type="color" name="userColor" id="ing_color">
+        </fieldset><br>
+    
+        <fieldset>
+            <legend>Inputs de Tiempo</legend>
+    
+            <label for="ing_fecha">Fecha:</label>
+            <input type="date" name="userDate" id="ing_fecha"><br>
+            <label for="ing_fecha_hora">Fecha y hora:</label>
+            <input type="datetime-local" name="userDateTime" id="ing_fecha_hora"><br>
+            <label for="ing_mes">Mes:</label>
+            <input type="month" name="userMes" id="ing_mes">
+        </fieldset><br>
+    
+        <fieldset>
+            <legend>Input de Rango</legend>
+    
+            <label for="ing_rango">Intervalo rango (10 a 20)</label>
+            <input type="range" name="userRango" id="ing_rango">
+        </fieldset><br>
+    
+        <fieldset>
+            <legend>Input tipo File</legend>
+    
+            <label for="ing_archivo">Subir un archivo:</label>
+            <input type="file" name="userFile" id="ing_archivo">
+        </fieldset><br>
+    
+        <fieldset>
+            <legend>Input tipo Hidden</legend>
+    
+            Para traspaso de datos (backend)<br>
+            <input type="hidden" name="userHidden" id="hidden" value="valorEscondidoQueSeTraspasa">
+        </fieldset><br>
+    
+        <fieldset>
+            <legend>Inputs de botón</legend>
+    
+            <input type="button" value="texto en botón">
+            <input type="reset" value="resetear">
+            <input type="submit">
+            <input type="submit" value="enviar">
+            <button type="submit">enviar</button><br>
+            <input type="image" src="util/img/boton.png" alt="boton enviar">
+        </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerarquía de etiquetas semánticas</title>
+</head>
+
+<body>
+    <!-- ETIQUETAS NO SEMÁNTICAS -->
+    <div></div>
+    <span></span>
+
+    <!-- ETIQUETAS SEMÁNTICAS   
+        contenido introductorio, puede estar dentro de cualquier contenedor
+        nombre de la pagina, agrupar links o logo de la pagina -->    
+    <header></header>
+
+    <!-- grupo de enlaces -->
+    <nav></nav>
+
+    <!-- contenido principal (solo uno) -->
+    <main></main>
+
+    <!-- contenido independiente y autocontenido, una noticia, un post de un blog -->
+    <article>
+        <h1></h1>
+        <p></p>
+        <section></section>
+    </article>
+
+    <!-- para contenido aparte del que está acompañado y que tiene una relación indirecta -->
+    <aside></aside>
+
+    <!-- para un grupo temático de contenido -->
+    <section>
+        <article></article>
+    </section>
+
+    <!-- pié de página o de un contenedor, copyright, link para volver al inicio, links para navegar, info de contacto -->
+    <footer></footer>
+
+    <!-- información de resumen y detalles por demanda de parte del usuario (esconde contenido) -->
+    <details>
+        <summary></summary>
+        <p></p>
+    </details>
+
+    <!-- bloque de contenido autónomo relacionado con gráficos, imágenes, ilustraciones, etc. -->
+    <figure> <!-- define el bloque -->
+        <img src="" alt=""> <!-- define la imagen -->
+        <figcaption></figcaption> <!-- título de la imagen-->
+    </figure>
+
+    <!-- resaltar una parte del texto -->
+    <p>Texto que puede tener <mark>una parte resaltada</mark> dentro de sí mismo.</p>
+
+    <!-- definir una fecha y hora de un evento -->
+     El <time datatime="2023-12-12 00:00">fin de año</time> celebremos enfamilia.
+
+</body>
+
+</html>
