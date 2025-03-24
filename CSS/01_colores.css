@@ -1,0 +1,26 @@
+/******* Nombres *******/
+/* Existen 140 colores predefinidos con un nombre en particular (W3School) y currentColor*/
+p {
+    color: olive;
+    background-color: black;
+    opacity: 0.5;                   /* Transparencia que aplica para color, background y todos los elementos dentro */
+}
+
+/******* RGB y Hexadecimal (0 - F) *******/
+p {
+    color: rgb(230, 34, 99);
+    color: rgba(230, 34, 99, 0.429);        /* Transparencia (canal alpha) 0.0 - 1.0 */ 
+    background-color: #334455 ;
+    background-color: #345 ;                /* Se duplica cada número (33 44 55) */
+    background-color: #3344559f ;           /* Transparencia (canal alpha) 00 - ff */ 
+}
+
+/********* HSL ********/
+/*  Hue - Tono: 0 - 360         El color en sí
+    Saturation: 0% - 100%       Qué tan vivo o pálido es el color
+    Ligthness - Brillo: 0% - 100%     Qué tan claro u oscuro es el color
+*/
+p {
+    color: hsl(150, 100%, 75%);
+    color: hsla(150, 100%, 75%, 0.279);             /* Transparencia (canal alpha) 0.0 - 1.0 */ 
+}

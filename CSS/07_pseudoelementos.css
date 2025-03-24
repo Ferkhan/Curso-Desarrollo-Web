@@ -1,0 +1,19 @@
+/* PSEUDO - ELEMENTOS */
+
+selector::pseudoelemento {
+    propiedad: valor;
+}
+
+::after {}
+::before {} /* content */
+::first-letter {}
+::first-line {}
+::selection {}
+::backdrop {}
+::placeholder {}
+::marker {}
+::spelling-error {}
+::grammar-error {}
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/::after */

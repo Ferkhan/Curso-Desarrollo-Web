@@ -1,0 +1,36 @@
+/* PSEUDO - CLASE */
+/* Basado en estados */
+
+selector:pseudoclase {
+    propiedad_1: valor;
+    propiedad_2: valor;
+}
+
+/**** Enlaces ****/
+/* Siempre en orden, sino no funca */
+a:link{}
+a:visited{}
+a:hover{}
+a:active{}
+
+/**** Formularios ****/
+:focus{
+    background-color: blue;
+}
+
+/**** Menos un elemento ****/
+:not(p) {
+    background-color: aqua;
+}
+
+/**** Orden de hijos ****/
+ul li {
+    border-radius: 20px 20px 0px 0px;
+    padding: 2%;
+}
+ul li:first-child {}
+ul li:last-child {}
+
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:active */

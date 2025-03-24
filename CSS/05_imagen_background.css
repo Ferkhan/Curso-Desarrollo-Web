@@ -1,0 +1,38 @@
+/* Unplash.com */
+
+body {
+    background-color: black;
+    background-image: url(direccion_imagen.png);    /* se repite en los ejes x,y. Se forman patrones */
+    background-repeat: no-repeat;                   /* no se repite */
+    background-repeat: repeat-x;                    /* se repite eje x */
+
+    background: black url(imagen.png) repeat;      
+}
+
+/************* Ubicación y tamaño ****************
+
+*/
+body {
+    /* posicionamiento x,y */
+    background-position: center top;    /* relativo */  
+    background-position: 30px 100px;    /* absoluto */
+    
+    /* tamaño */
+    background-size: 100px 300px;       /* absoluto */
+    background-size: 50%;               /* relativo al tamaño ventana */
+    background-size: contain;           /* escala la imagen al tamaño ventana para que se vea completa */
+    background-size: cover;             /* no lo escala, sino que lo muestra en su tamaño original */ 
+
+    background-attachment: fixed;       /* la imagen se queda quieta y no le afecta el scroll */
+
+}
+
+/***************** Múltiples imágenes ***************/
+body {
+    background-image: url(primeraImagen.png), url(segundaImagen.png);
+    background-repeat: repeat-x, no-repeat;
+    background-position: top, bottom right;
+    background-size: 10px 30px, contain;
+
+    background: url(primeraImagen.png) repeat-x, url(segundaImagen.png) no-repeat;
+}

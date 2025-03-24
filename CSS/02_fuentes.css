@@ -1,0 +1,94 @@
+/* 
+    RECURSOS:
+        - Fontsquirrel
+        - Google Fonts
+*/
+
+
+/*********** Font-family ***********
+    Fuentes seguras para web (fuentes instaladas en todos los sistemas operativos)
+        Arial (sans-serif)
+        Verdana (sans-serif)
+        Helvetica (sans-serif)
+        Tahoma (sans-serif)
+        Trebuchet (sans-serif)
+        Times New Roman (serif)
+        Georgia (serif)
+        Garamond (serif)
+        Courier New (monospace)
+        Brush Script MT (cursive)
+    
+    Serifas (serif): líneas unidas a las letras como la tipografía de Times New Roman.
+        Usados para representar prestigio y formalidad, como estudio de abogados o contables. 
+        Aunque también son muy utilizadas en el sector premiun para indicar que son las reinas 
+        de las marcas de lujo, como en el mundo de los automóviles, la moda y belleza.
+
+    San Serif (sans-serif): tipografía más moderna que la Serif , y no tienen contrastes como
+        las serifas, ya que sus trazos son uniformes. Están ligadas con la actualidad,
+        y se caracterizan por ser más legibles y de uso comercial, por ser más fáciles de leer.
+
+    Monospace: cada caracter ocupa el mismo ancho, como si fueran escritas por máquina de escribir.
+
+    Cursiva: como si estuvieran escritas a mano.
+
+    Fantasía: fuentes con un estilo único y diferente.
+
+    Fuentes de reserva: constan de un conjunto de fuentes que en caso de no existir la primera, se 
+        usa la segunda o la tercera, etc.
+
+*/
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/********************* Font-face ********************  
+    En caso de querer usar fuentes externas
+
+    Formato fuentes permitidas en navegadores: TTF/OTF; WOFF; WOFF2
+
+*/
+
+@font-face {
+    font-family: cualquierNombre;
+    src: url(archivoFuente.ttf);
+}
+
+body {
+    font-family: cualquierNombre, sans-serif;
+}
+
+/**************** Fuentes de Google ******************* 
+    Sin descargar el archivo de fuente:
+    
+    HTML
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+
+    CSS
+        @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+ */
+
+
+/******************* Tamaño de fuente **********************
+    Absoluta:  
+        Establece el texto en un tamaño específico
+        No permite que un usuario cambie el tamaño de texto en todos los navegadores (malos por razones de accesibilidad)
+        El tamaño absoluto es útil cuando se conoce el tamaño físico de la salida
+    
+    Relativa:
+        Establece el tamaño en relación con los elementos circundantes 
+        Permite a un usuario cambiar el tamaño del texto en los navegadores
+        - em: 16px = 1em
+        - vw: 1vw = 1% of viewport width
+*/
+
+/********************* Propiedades ***************************
+    font	        Todas las propiedades en una declaración
+    font-family	    Especifica el tipo de fuente
+    font-size	    Especifica el tamaño
+    font-style	    Especifica el estilo del texto (normal, itálica, etc)
+    font-weight	    Especifica el grosor de la fuente
+*/

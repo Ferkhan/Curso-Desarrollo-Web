@@ -1,0 +1,88 @@
+/* 
+    Cascading Style Sheet 
+
+    Lenguaje basado en reglas 
+*/
+
+selector {
+    propiedad: valor;
+    propiedad: valor;
+}
+
+p {
+    color: aquamarine;
+    font-size: 20pt;
+}
+
+/* 
+    Características básicas
+        Todos los elementos tienen un estilo por defecto
+        
+    Regla de la cascada, el último estilo es el que cuenta
+        color: green
+        color: red
+        El texto toma el color red
+
+    Especificidad
+        Se le da más importancia cuando se establece un ID a un estilo ante un estilo general
+
+    Herencia
+        Si a un contenedor se le asigna un estilo (body), todos los elementos contenidos adquieren ese estilo 
+        (h1, h2, p) a menos de que se especifique con un ID a un elemento
+
+    
+    Formas de colocar estilos en documentos HTML
+        - Entre lineas: usar el atributo "style" en elementos html
+            <p style="color: red; font-size: 20pt"> lorem </p>
+        - Interno: dentro del head colocar
+            <style>
+                // trabajar como si fuera un documento css
+            </style>
+        - Externo: por medio de una hoja de estilos externo y enlazar en el head
+            <link rel="stylesheet" href="nombreHojaEstilos"> 
+*/
+
+/* Selector de elemento */
+p {
+    color: aqua;
+}
+
+h2 {
+    font-family: Arial;
+}
+
+/* Selector grupal */
+h1,
+h2,
+h3,
+h4 {
+    font-size: 30pt;
+    font-family: 'Times New Roman';
+}
+
+/* Selector específico */
+ul li {
+    color: olive;
+}
+
+/* Selector de identificador */
+/* <p id="identificadorHTML"> lorem </p> */
+#identificadorHTML {
+    color: blueviolet;
+}
+
+/* Selector de clase */
+/* <p class="nombreClase otraClase"> lorem </p> */
+.nombreClase {
+    margin-top: 50px;
+}
+
+p.nombreClase {
+    margin-bottom: 20px;
+}
+
+
+/* Selector universal */
+* {
+    color: slategrey;
+}

@@ -1,0 +1,56 @@
+p {
+    font-size: 30pt;    /* pt, px, cm, in */
+    font-size: 30%;     /* en comparación con el tamaño de fuente del contenedor */
+    font-size: 0.5em;   /* proporción, similar a % */
+}
+
+p {
+    font-style: normal;
+    font-style: italic;
+    font-style: oblique;
+}
+
+p {
+    font-weight: normal;
+    font-weight: 100;       /* tienen sus equivalentes en palabras, depende de si la fuente soporta en número */
+}
+
+p { /* alineación */
+    text-align: justify;
+}
+
+p { 
+    direction: ltr;         /* depende de cómo las personas escribien (derecha en medio oriente) */
+}
+
+p { /* separación entre letras */
+    letter-spacing: 20px;       /* valor absoluto */
+    letter-spacing: -3px;
+}
+
+p { /*separación entre líneas y párrafos */
+    line-height: 20pt;
+}
+
+p { /* separación entre palabras */
+    word-spacing: 30pt;
+}
+
+p { /* indentado o sangría */
+    text-indent: 40px;
+}
+
+p { /* ubicar o quitar un subrayado por debajo, en medio o por encima del texto (util para quitar en enlaces) */
+    text-decoration: overline;
+}
+
+p { /* configuración de columnas */
+    column-count: 3;        /* cantidad de columnas */
+    column-gap: 50px;       /* separación entre columnas */
+    column-rule: red solid 3px;     /* configuración de la línea entre columnas */
+    column-rule-color: red;
+    column-rule-style: solid;
+    column-rule-width: 2px;
+    column-width: 300px;    /* ancho ideal para un párrafo, separa en columnas siempre que haya espacio */
+    column-span: all;       /* ignora las columnas y abarca toda la línea horizontal */
+}
