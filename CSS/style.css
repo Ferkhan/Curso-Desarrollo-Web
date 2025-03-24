@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+
+
+body {
+    font-family: Kablammo,Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-style: bolder;
+    font-weight: 700;
+    color: rgb(8, 9, 9);
+
+
+    background-color: olive;
+    background-image: url(../util/img/imagen_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+
