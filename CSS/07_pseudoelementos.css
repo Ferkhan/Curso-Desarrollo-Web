@@ -4,11 +4,11 @@ selector::pseudoelemento {
     propiedad: valor;
 }
 
-::after {}
-::before {} /* content */
-::first-letter {}
-::first-line {}
-::selection {}
+::after {content: url(ruta);}
+::before {content: "Texto";} /* content: img, texto */
+::first-letter {font-size: 50px;}
+::first-line {color: olive;}
+::selection {background-color: aqua;}
 ::backdrop {}
 ::placeholder {}
 ::marker {}

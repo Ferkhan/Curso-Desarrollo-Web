@@ -1,0 +1,36 @@
+/* PROPIEDADES DE CONTROL DE FLUJO
+    Display
+        block:  el elemento ocupa todo el ancho de la página y tiene un 
+                salto de línea arriba y abajo, forzando los elementos 
+                abajo del mismo. 
+                Permiten definir alto y ancho.
+
+        inline: solamente ocupan el ancho de su contenido, no tienen salto
+                de línea y permiten a otros elementos que se coloquen a 
+                su lado.
+                Ignoran los valores de alto y ancho.
+
+        none:   permite esconder al elemento al que se lo aplique y no deja
+                ningún espacio en blanco.
+
+                
+    Clear
+        both:   no permite que ningún elemento con float definido se haga a 
+                ninguno de sus dos lados.
+        
+        none:   permite que un elemento se haga a sus dos lados.
+
+        left:   coloca los elementos a la izquierda.
+
+        right:  coloca a la derecha.
+    
+
+    Float
+        left:   el elemento flota o se alínea a la izquierda.
+        
+        right:  el elemento flota o se alínea a la derecha.
+
+        none:   el elemento no flota y no se ubica a ningún lado de los otros
+                elementos, se queda abajo (por defecto).
+
+*/

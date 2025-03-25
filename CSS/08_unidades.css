@@ -1,0 +1,42 @@
+/* UNIDADES ABSOLUTAS
+    Siempren van a medir lo mismo
+    - px: unidad mínima de una imagen digital, pequeños cuadros
+          que conforman una imagen
+    
+    Sistema métrico
+    - mm: milímetros
+    - cm: centrímetros
+    - in: pulgadas (2.54 cm)
+
+    Tipografía
+    - pt: puntos (1pt = 1/72 de 1 pulgada)
+    - pc: picas (1pc = 12pt)
+
+    <section id="medidasEn..">Contenedor con tal medida...</section>
+
+*/
+
+#idContenedor {
+    background-color: greenyellow;
+    width: medida;
+    height: medida;
+}
+
+/* UNIDADES RELATIVAS
+    %:      relativo al elemento padre
+
+    vw:     relativo al 1% del ancho de la ventana
+    vh:     relatvio al 1% del alto de la ventana
+
+    vmin:   relativo al 1% de la dimensión más pequeña de la ventana
+    vmax:   relativo al 1% de la dimensión más grande de la ventana
+
+    em:     relativo al tamaño de la fuente del elemento
+    rem:    relativo al tamaño de la fuente del elemento raíz (html)
+
+    ex:     relativo a la altura de la x de la fuente que esté usando
+    ch:     relativo al ancho del "0"
+
+
+    <section id="medidasEn..">Contenedor con tal medida...</section>
+*/
