@@ -1,0 +1,62 @@
+/* Bandera Horizontal */
+#verde {
+    background-color: rgb(4, 115, 26);
+    width: 550px;
+    height: 200px;
+  
+    display: block;
+    clear: both;
+    float: right;
+  }
+  
+  #amarillo {
+    background-color: #f7f730;
+    width: 550px;
+    height: 100px;
+  
+    display: block;
+    clear: both;
+    float: right;
+  }
+  
+  #morado {
+    background-color: rgb(55, 12, 96);
+    width: 550px;
+    height: 100px;
+  
+    display: block;
+    clear: both;
+    float: right;
+  }
+
+
+/* Bandera Vertical */
+#celeste {
+    background-color: rgb(58, 199, 199);
+    width: 150px;
+    height: 400px;
+  
+    display: block;
+    clear: none;
+    float: left;
+  }
+  
+  #crema {
+    background-color: rgb(244, 239, 201);
+    width: 150px;
+    height: 400px;
+  
+    display: block;
+    clear: none;
+    float: left;
+  }
+  
+  #rojo {
+    background-color: rgb(224, 56, 56);
+    width: 150px;
+    height: 400px;
+  
+    display: block;
+    clear: none;
+    float: left;
+  }
