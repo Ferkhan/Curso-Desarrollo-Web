@@ -1,0 +1,100 @@
+/* ============================
+        Margen y Padding
+   ============================ 
+    Responden al modelo de caja: sistema que tiene el navegador de interpretar las diferentes 
+    partes de lo que solemos denominar «caja»: un elemento HTML con unas ciertas dimensiones.
+
+   - margin: Espacio externo alrededor de un elemento.
+   - padding: Espacio interno entre el contenido y el borde de un elemento.
+ 
+*/
+
+/* ============================
+   Ejemplo 1: Diferencia entre margen y padding
+   ============================ */
+   .box {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 20px; /* Margen externo de 20px */
+    padding: 20px; /* Espacio interno de 20px */
+    border: 2px solid darkblue;
+}
+
+/* ============================
+   Ejemplo 2: Márgenes individuales
+   ============================ */
+.margin-example {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    background-color: lightgreen;
+    width: 150px;
+    height: 100px;
+    border: 2px solid green;
+}
+
+/* ============================
+   Ejemplo 3: Padding individual
+   ============================ */
+.padding-example {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    background-color: lightcoral;
+    width: 150px;
+    height: 100px;
+    border: 2px solid red;
+}
+
+/* ============================
+   Ejemplo 4: Margen automático para centrar elementos
+   ============================ */
+.centered-box {
+    width: 200px;
+    height: 100px;
+    background-color: lightyellow;
+    margin: 0 auto; /* Centra horizontalmente */
+    border: 2px solid orange;
+}
+
+/* ============================
+   Ejemplo 5: Cantidad de parámetros
+   ============================ */
+   .centered-box {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(226, 226, 106);
+    border: 2px solid rgb(53, 171, 96);
+    margin: 10px; /* Afecta todos los lados*/
+    margin: 10px 20px; /* Primero: arriba y abajo - Segundo: izq y derecha */
+    margin: 10px 20px 30px; /* Primero: arriba - Segundo: izq y derecha - Tercero: abajo*/
+    margin: 10px 20px 30px 40px; /* Arriba Derecha Abajo Izquierda  (Manecillas reloj) */
+}
+
+/* ============================
+   Ejemplo 6: Con porcentajes
+   ============================ */
+.centered-box {
+    height: 100px;
+    background-color: rgb(226, 226, 106);
+    border: 2px solid rgb(53, 171, 96);
+    width: 25%;
+    padding-left: 5%; 
+
+    /* Todos los valores se suman para calcular las dimensiones totales */
+}
+
+/* ============================
+   Ejemplo 7: Box-sizing y su efecto en padding
+   ============================ */
+.box-sizing-example {
+    width: 200px;
+    height: 100px;
+    background-color: lightgray;
+    padding: 20px;
+    border: 2px solid black;
+    box-sizing: border-box; /* Hace que padding no afecte el tamaño total */
+}

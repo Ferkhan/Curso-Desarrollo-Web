@@ -1,0 +1,24 @@
+/*  BOX-SIZING
+
+    La propiedad box-sizing define cómo se calcula el tamaño total de un elemento, 
+    considerando o no el padding y el borde dentro del tamaño especificado. */
+
+/* Modelo de caja estándar (default) */
+/* Propiedades width y height incluyen solo el contenido */
+.box-standard {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid black;
+    box-sizing: content-box; /* Valor por defecto */
+}
+
+/* Modelo de caja alternativo */
+/* Width y height incluyen contenido, padding y border */
+.box-alternativo {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid black;
+    box-sizing: border-box; 
+}

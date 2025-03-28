@@ -1,0 +1,33 @@
+/* BORDER
+
+    Los bordes en CSS permiten definir un contorno alrededor de los elementos. 
+    Se pueden personalizar con grosor, estilo y color. 
+   
+    
+    border-width: valor, medium, thin, thick
+    border-style: hidden, dotted, dashed, solid, double, groove, ridge, inset, outset
+    
+*/
+
+.ejemplo-borde {
+    border: 2px solid #3498db; /* Grosor, estilo y color */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px; /* Espaciado externo */
+}
+
+/* Tipos de bordes disponibles */
+.borde-solido { border: 2px solid black; }
+.borde-punteado { border: 2px dotted red; }
+.borde-rayado { border: 2px dashed blue; }
+.borde-doble { border: 4px double green; }
+.borde-relieve { border: 3px ridge gray; }
+
+/* Bordes en lados específicos */
+.borde-izquierdo { border-left: 3px solid purple; }
+.borde-superior { border-top: 3px solid orange; }
+
+/* Bordes redondeados */
+.borde-redondeado {
+    border: 2px solid black;
+    border-radius: 15px; /* Redondea las esquinas */
+}

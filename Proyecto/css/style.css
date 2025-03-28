@@ -1,0 +1,234 @@
+body {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    background-color: red;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: brown;
+}
+
+/*************** HEADER *****************/
+#encabezado_principal {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+
+    background-color: white;
+}
+
+#barra_superior {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+#barra_superior_nav {
+    display: block;
+    clear: none;
+    float: left;
+    width: 60%;
+}
+
+#barra_superior_nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#barra_superior_nav ul li {
+    display: inline;
+    clear: none;
+    float: left;
+
+    padding: 10px;
+}
+
+#barra_superior_nav ul li a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+#barra_superior_nav ul li a:visited{
+    color: #393939;
+}
+#barra_superior_nav ul li a:hover{
+    color: brown;
+}
+
+
+#barra_superior img {
+    display: inline;
+    clear: none;
+    float: right;
+    width: 75px;
+}
+
+#barra_superior h1 {
+    display: block;
+    clear: none;
+    float: right;
+    width: 25%;
+}
+
+#banner_principal {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+    min-height: 300px;
+}
+
+
+/*************** MAIN *****************/
+#contenido_principal  {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+#perfil {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+    background-color: black;
+    color: bisque;
+}
+
+#descripcion {
+    display: block;
+    clear: none;
+    float:left;
+
+    width: 50%;
+}
+
+#habilidades {
+    display: block;
+    clear: none;
+    float:left;
+
+    width: 50%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: solid 1px #eee;
+    padding: 5px;
+}
+
+th {
+    background-color: brown;
+}
+
+#empresas {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+
+    background-color: #bab7b7;
+}
+
+#empresas img {
+    width: 300px;
+    height: 300px;
+}
+
+#empresa_destacada {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+
+    text-align: center;
+    background-color: aliceblue;
+}
+
+#empresa_destacada h2,
+#empresa_destacada p {
+    text-align: center;
+}
+
+
+
+
+/*************** FOOTER *****************/
+#pie_pagina_principal {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+
+    color: white;
+}
+
+#formulario {
+    text-align: center;
+}
+
+#formulario_contacto {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+
+    background-color: #000000;
+}
+
+#barra_inferior {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+
+    background-color: #464646;
+}
+
+#copyright {
+    display: block;
+    clear: none;
+    float: left;
+    width: 70%;
+}
+
+#redes_sociales {
+    display: block;
+    clear: none;
+    float: left;
+    width: 30%;
+}
+
+#redes_sociales ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#redes_sociales ul li {
+    display: inline;
+    clear: none;
+    float: left;
+
+    padding: 10px;
+
+}
+
+#redes_sociales ul li a:link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#redes_sociales ul li a:visited{
+    color: #d0d0d0;
+}
+#redes_sociales ul li a:hover{
+    color: rgb(206, 210, 6);
+}
