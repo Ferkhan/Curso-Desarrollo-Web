@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/e5ef0a638c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -17,7 +19,7 @@
         <section id="barra_superior">
             <nav id="barra_superior_nav">
                 <ul>
-                    <li><a href="pages/inicio.html">Inicio</a></li>
+                    <li id="pag_actual"><a href="#">Inicio</a></li>
                     <li><a href="pages/contenido.html">Contenido</a></li>
                     <li><a href="pages/descubrir.html">Descubrir</a></li>
                     <li><a href="pages/quienes_somos.html">¿Quiénes somos?</a></li>
@@ -27,8 +29,8 @@
             <h1>
                 Elon Musk
             </h1>
-            <img src="res/img_01.png" alt="Elon Musk">
-        </section>
+            <img src="res/img_icon.jpg" alt="Elon Musk">
+        </section>        
         <section id="banner_principal">
             <h2>El Gran Elon Musk</h2>
             <p>
@@ -41,16 +43,20 @@
         </section>
     </header>
 
+    <div id="wrapper_main">
     <main id="contenido_principal">
+        <div id="wrapper_perfil">
         <article id="perfil">
             <section id="descripcion">
-                <h2>Descripción</h2>
-                <p>
-                    Magnate de los medios de comunicación, empresario y filántropo, Elon Musk es el fundador, CEO y CTO
-                    de SpaceX, cofundador de Tesla Motors y fundador de The Boring Company. Además, es cofundador de
-                    Neuralink, OpenAI y PayPal. Musk ha sido el principal impulsor del desarrollo del coche eléctrico,
-                    el cohete espacial Falcon 9 y el Hyperloop.
-                </p>
+                <div id="texto_agrupado">
+                    <h2>Descripción</h2>
+                    <p>
+                        Magnate de los medios de comunicación, empresario y filántropo, Elon Musk es el fundador, CEO y CTO
+                        de SpaceX, cofundador de Tesla Motors y fundador de The Boring Company. Además, es cofundador de
+                        Neuralink, OpenAI y PayPal. Musk ha sido el principal impulsor del desarrollo del coche eléctrico,
+                        el cohete espacial Falcon 9 y el Hyperloop.
+                    </p>
+                </div>
                 <img src="res/img_02.png" alt="Foto Elon Musk">
             </section>
             <aside id="habilidades">
@@ -89,19 +95,23 @@
                 </table>
             </aside>
         </article>
+        </div>
+        <div id="wrapper_empresas">
         <article id="empresas">
             <h2>Empresas</h2>
-            <section id="grupo_empresas">
-                <img src="res/img_03.webp" alt="Starlink">
-                <img src="res/img_04.webp" alt="SolarCity">
-                <img src="res/img_05.webp" alt="Neuralink">
-                <img src="res/img_06.png" alt="Twitter">
-                <img src="res/img_07.jpg" alt="Paypal">
-                <img src="res/img_08.jpg" alt="Space X">
-                <img src="res/img_09.jpg" alt="Tesla">
-                <img src="res/img_10.webp" alt="The Boring Company">
+            <section id="grupo_empresas">                
+                <div><img src="res/img_03.webp" alt="Starlink"></div>
+                <div><img src="res/img_04.webp" alt="SolarCity"></div>
+                <div><img src="res/img_05.webp" alt="Neuralink"></div>
+                <div><img src="res/img_06.png" alt="Twitter"></div>
+                <div><img src="res/img_07.jpg" alt="Paypal"></div>
+                <div><img src="res/img_08.jpg" alt="Space X"></div>
+                <div><img src="res/img_09.jpg" alt="Tesla"></div>
+                <div><img src="res/img_10.webp" alt="The Boring Company"></div>
             </section>
         </article>
+        </div>
+        <div id="wrapper_destacada">
         <article id="empresa_destacada">
             <h2>Empresa más famosa</h2>
             <p>
@@ -109,12 +119,12 @@
                 fabricación de los vehículos eléctricos, productos de batería y productos de energía solar a nivel
                 mundial.
             </p>            
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/azUbCdcAeFM?si=TpyfQZEBscdUD6WZ"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Jt7DqX2AlNo?si=sOJT4OwVOtovmiT5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </article>
+        </div>
     </main>
+    </div>
 
     <footer id="pie_pagina_principal">
         <section id="formulario_contacto">
@@ -148,9 +158,9 @@
             <section id="redes_sociales">
                 <nav id="enlaces_redes">
                     <ul>
-                        <li><a href="">Facebook</a></li>
-                        <li><a href="">Twitter</a></li>
-                        <li><a href="">Instagram</a></li>
+                        <li><a href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a></i></li>
+                        <li><a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
                     </ul>
                 </nav>
             </section>

@@ -1,0 +1,80 @@
+/* Position en CSS */
+
+/*  En CSS, la propiedad position se usa para especificar el método de 
+    posicionamiento de un elemento en la página. */
+
+
+
+/* static (Valor por defecto) */
+.elemento-static {
+    position: static;
+}
+
+/* relative (Relativo a su posición original) */
+.elemento-relative {
+    position: relative;
+    top: 20px; /* Mueve el elemento 20px hacia abajo */
+    left: 10px; /* Mueve el elemento 10px hacia la derecha */
+}
+
+/* absolute (Posicionamiento absoluto) */
+/*  Con respecto al position del padre, siempre y cuando su position sea diferente
+    a static, sino, se posiona con respecto a la ventana */
+.elemento-absolute {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+/*  fixed (Fijo en la pantalla) */
+.elemento-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+/* sticky (Combinación de relative y fixed) */
+.elemento-sticky {
+    position: sticky;
+    top: 0;
+    background-color: yellow;
+}
+
+/* Ejemplos prácticos */
+
+/* Menú de navegación fijo */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+/* Imagen absoluta dentro de un contenedor */
+.contenedor {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.imagen {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+}
+
+/* Encabezado pegajoso (sticky) */
+.encabezado {
+    position: sticky;
+    top: 0;
+    background-color: green;
+    padding: 10px;
+    color: white;
+}
+

@@ -1,0 +1,96 @@
+/* Transiciones en CSS */
+
+/*  La propiedad transition permite cambiar gradualmente una propiedad CSS 
+    en un período de tiempo determinado. 
+    
+
+    transition-property
+    transition-duration
+    transition-timing-delay
+    transition-delay
+
+    Lo más importante es la propiedad y la duración, se puede poner:
+        transition: propiedad duración;
+
+*/
+
+
+
+/* Cambio de color con transición */
+.button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out; /* Transición suave en 0.5s */
+}
+
+.button:hover {
+    background-color: red; /* Cambia de azul a rojo con transición */
+}
+
+/* Cambio de tamaño con transición */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: width 1s, height 1s; /* Transición en ancho y alto */
+}
+
+.box:hover {
+    width: 200px;
+    height: 200px;
+}
+
+/* Movimiento con transición */
+.mover {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    transition: transform 0.7s ease-in-out;
+}
+
+.mover:hover {
+    transform: translateX(100px); /* Se mueve 100px a la derecha */
+}
+
+/* Opacidad con transición */
+.fade {
+    width: 150px;
+    height: 150px;
+    background-color: purple;
+    opacity: 1;
+    transition: opacity 0.8s ease-in;
+}
+
+.fade:hover {
+    opacity: 0.3; /* Se vuelve más transparente al pasar el mouse */
+}
+
+
+/* Se pueden combinar varias propiedades en una misma transición */
+.multi {
+    width: 120px;
+    height: 120px;
+    background-color: pink;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.multi:hover {
+    background-color: cyan;
+    transform: rotate(45deg);
+}
+
+/* Se puede agregar un retraso antes de que comience la transición */
+.delay {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    transition: background-color 0.5s ease-in 1s; /* Retraso de 1s */
+}
+
+.delay:hover {
+    background-color: yellow;
+}

@@ -1,0 +1,74 @@
+/* Filtros en CSS */
+
+/*  La propiedad filter permite aplicar efectos visuales como desenfoque, brillo, 
+    contraste y otros a imágenes y elementos HTML. 
+   
+    - none
+    - blur(px)
+    - brightness(%)
+    - constrast(%)
+    - drop-shadow(h v desenfoque color)
+    - grayscale(%)
+    - hue-rotate(deg)
+    - invert(%)
+    - opacity(%)
+    - saturate(%)
+    - sepia(%)
+    
+    filter: filtro1;
+    filter: filtro1 filtro2 filtro3;
+      
+*/
+
+/* Desenfoque */
+.blur {
+    filter: blur(5px); /* Aplica un desenfoque de 5 píxeles */
+}
+
+/* Brillo */
+.brightness {
+    filter: brightness(150%); /* Aumenta el brillo en un 50% */
+}
+
+/* Contraste */
+.contrast {
+    filter: contrast(200%); /* Duplica el contraste */
+}
+
+/* Escala de grises */
+.grayscale {
+    filter: grayscale(100%); /* Convierte la imagen completamente en blanco y negro */
+}
+
+/* Inversión de colores */
+.invert {
+    filter: invert(100%); /* Invierte los colores (negativo de la imagen) */
+}
+
+/* Opacidad */
+.opacity {
+    filter: opacity(50%); /* Reduce la opacidad al 50% */
+}
+
+/* Sepia */
+.sepia {
+    filter: sepia(80%); /* Da un efecto sepia con 80% de intensidad */
+}
+
+/* Sombra */
+.drop-shadow {
+    filter: drop-shadow(10px 10px 5px gray); /* Aplica una sombra proyectada */
+}
+
+/* Saturación */
+.saturate {
+    filter: saturate(300%); /* Aumenta la saturación al 300% */
+}
+
+/* Tonalidad */
+.hue-rotate {
+    filter: hue-rotate(180deg); /* Cambia el tono de los colores 180 grados */
+}
+
+
+

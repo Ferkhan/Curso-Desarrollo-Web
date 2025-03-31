@@ -1,61 +1,93 @@
+:root {
+    --colorPrincipal: #123524;
+    --colorPrincipalOscuro: #05100b;
+    --colorPrincipalVariante: #3E7B27;
+    --colorSecundario: #85A947;
+    --colorSecundarioOscuro: #242e13;
+    --colorSecundarioVariante: #EFE3C2;
+    --colorEncabezado: white;
+    --colorTexto: black;
+}
+
+html {
+    background-color: olive;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Inter, sans-serif;
     font-size: 16px;
-    background-color: red;
     margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: brown;
+    color: var(--colorPrincipalVariante);
+}
+
+
+section, article {    
+    width: 100%;
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
 }
 
 /*************** HEADER *****************/
-#encabezado_principal {
-    display: block;
-    clear: both;
-    float: left;
-    width: 100%;
-
-    background-color: white;
-}
-
 #barra_superior {
-    display: block;
-    clear: both;
-    float: left;
-    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: var(--colorEncabezado);
+    min-height: 60px;
+    padding: 0 2%;
+    box-shadow: 0 0px 10px rgb(44, 44, 44);
+    z-index: 1000;
 }
 
 #barra_superior_nav {
     display: block;
     clear: none;
     float: left;
-    width: 60%;
+    width: 70%;
 }
 
 #barra_superior_nav ul {
     list-style-type: none;
-    padding: 0;
 }
 
 #barra_superior_nav ul li {
     display: inline;
     clear: none;
     float: left;
-
-    padding: 10px;
 }
 
-#barra_superior_nav ul li a:link {
+#barra_superior_nav ul li a:link,
+#barra_superior_nav ul li a:visited {
+    display: block;
+    height: 60px;
+    line-height: 60px;
     text-decoration: none;
-    color: #000000;
+    color: var(--colorTexto);
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    transition: all 0.5s;
 }
 
-#barra_superior_nav ul li a:visited{
-    color: #393939;
-}
-#barra_superior_nav ul li a:hover{
-    color: brown;
+#barra_superior_nav ul li a:hover,
+#barra_superior_nav ul li a:active,
+#barra_superior_nav ul li#pag_actual a:link,
+#barra_superior_nav ul li#pag_actual a:visited {
+    color: var(--colorPrincipalVariante);
+    transition: all 0.5s;
 }
 
 
@@ -63,22 +95,36 @@ h1, h2, h3, h4, h5, h6 {
     display: inline;
     clear: none;
     float: right;
-    width: 75px;
+    width: 60px;
 }
 
 #barra_superior h1 {
-    display: block;
+    display: inline;
     clear: none;
     float: right;
-    width: 25%;
+    line-height: 60px;
+    text-align: right;
+    padding: 0 15px;
+}
+
+#wrapper_banner_p {
+    max-width: 100%;
 }
 
 #banner_principal {
-    display: block;
-    clear: both;
-    float: left;
-    width: 100%;
     min-height: 300px;
+    padding: 15% 7%;
+    background-color: var(--colorEncabezado);
+    background-image: url(../res/img_bg.png);
+    background-size: auto 80%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+#banner_principal > p {
+    width: 60%;
+    padding-top: 2%;
+    line-height: 1.5em;
 }
 
 
@@ -87,16 +133,22 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     clear: both;
     float: left;
-    width: 100%;
+    width: 100%;    
+}
+
+#wrapper_perfil {
+    background-color: var(--colorPrincipal);
 }
 
 #perfil {
-    display: block;
-    clear: both;
-    float: left;
-    width: 100%;
-    background-color: black;
-    color: bisque;
+    color: var(--colorSecundarioVariante);    
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#perfil h2 {
+    color: var(--colorSecundario);
+    text-align: center;
 }
 
 #descripcion {
@@ -104,7 +156,33 @@ h1, h2, h3, h4, h5, h6 {
     clear: none;
     float:left;
 
-    width: 50%;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+#descripcion > #texto_agrupado {
+    display: block;
+    clear: none;
+    float: left;
+    width: 55%;
+    padding: 5% 3.3%;
+    box-sizing: border-box;
+}
+
+#descripcion p { 
+    padding: 3% 0;
+    line-height: 2em;
+
+    display: block;
+    clear: none;
+    float: left;
+}
+
+#descripcion img {
+    display: block;
+    clear: none;
+    float: right;
+    width: 45%;    
 }
 
 #habilidades {
@@ -112,53 +190,103 @@ h1, h2, h3, h4, h5, h6 {
     clear: none;
     float:left;
 
-    width: 50%;
+    width: 40%;
+    padding: 3% 2%;
+    box-sizing: border-box;
+    overflow: auto;
 }
 
-table {
+#habilidades table {
     width: 100%;
+    margin-top: 3%;
     border-collapse: collapse;
 }
 
-th, td {
-    border: solid 1px #eee;
-    padding: 5px;
+#habilidades th, td {
+    border-bottom: solid 3px var(--colorSecundario);
+    padding: 2%;
 }
 
-th {
-    background-color: brown;
+#habilidades th {
+    background-color: var(--colorSecundario);
+}
+
+#habilidades tr {
+    transition: background-color 0.5s;
+}
+
+#habilidades table td:nth-child(2) {
+    text-align: center;
+}
+#habilidades table td:nth-child(3) {
+    text-align: center;
+}
+
+#habilidades table tr:hover {
+    background-color: var(--colorPrincipalVariante);
+    transition: background-color 0.5s;
+}
+
+#wrapper_empresas {
+    background-color: var(--colorSecundarioVariante);
 }
 
 #empresas {
-    display: block;
-    clear: both;
-    float: left;
-    width: 100%;
-
-    background-color: #bab7b7;
+    text-align: center;
+    padding: 2%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
-#empresas img {
+#empresas #grupo_empresas {
+    box-sizing:  border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#empresas h2,
+#empresa_destacada h2 {
+    padding: 2% 0;
+}
+
+#empresas #grupo_empresas div {
+    display: inline-block;
+    clear: none;
+    float: none;
     width: 300px;
     height: 300px;
+    overflow: hidden;
+}
+
+#empresas #grupo_empresas img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+#empresas #grupo_empresas img:hover {
+    transform: scale(1.3);
 }
 
 #empresa_destacada {
-    display: block;
-    clear: both;
-    float: left;
-    width: 100%;
-
-    text-align: center;
     background-color: aliceblue;
-}
-
-#empresa_destacada h2,
-#empresa_destacada p {
     text-align: center;
+    padding: 2%;
 }
 
+#empresa_destacada p {
+    padding: 2% 0;
+    line-height: 1.5em;
+}
 
+#empresa_destacada iframe {
+    width: 50%; 
+    max-width: 1200px;
+    box-shadow: 0px 0px 20px rgb(65, 65, 65);
+    margin: 2% 0;
+}
 
 
 /*************** FOOTER *****************/
@@ -168,20 +296,73 @@ th {
     float: left;
     width: 100%;
 
-    color: white;
-}
-
-#formulario {
-    text-align: center;
+    color: var(--colorSecundarioVariante);
 }
 
 #formulario_contacto {
-    display: block;
-    clear: both;
-    float: left;
-    width: 100%;
+    box-sizing: border-box;    
+    padding: 5% 20%;
+    background-color: var(--colorPrincipalOscuro);
+}
+#formulario_contacto h2 {
+    text-align: center;
+    color: var(--colorSecundario)
+}
 
-    background-color: #000000;
+#formulario_contacto p {
+    text-align: center;
+    padding: 3% 0;
+}
+
+
+#formulario form {
+    width: 30em;
+    margin: 0 auto;
+}
+
+#formulario form label {
+    padding-top: 2%;
+    display: block;
+    color: #8c8c8c;
+}
+
+#formulario form input,
+#formulario form textarea {
+    width: 100%;
+    background-color: var(--colorSecundarioOscuro);
+    font-size: 1.2em;
+    border: solid 1px #666;
+    padding: 1%;
+    margin: 2% 0;
+    color: var(--colorSecundarioVariante);
+}
+
+#formulario form input::placeholder,
+#formulario form textarea::placeholder {
+    font-style: italic;
+}
+
+#formulario form input:focus,
+#formulario form textarea:focus {
+    background-color: var(--colorPrincipal);
+
+}
+
+#formulario form button {
+    padding: 3%;
+    margin: 0 auto;
+    background-color: var(--colorSecundario);
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--colorSecundarioVariante);
+    display: block;
+    border: none;
+    border-radius: 10px;
+}
+
+#formulario form button:hover {
+    background-color: var(--colorPrincipal);
+    cursor: pointer;
 }
 
 #barra_inferior {
@@ -190,45 +371,38 @@ th {
     float: left;
     width: 100%;
 
-    background-color: #464646;
+    background-color: var(--colorSecundarioOscuro);
 }
 
-#copyright {
-    display: block;
-    clear: none;
-    float: left;
-    width: 70%;
+#copyright p {
+    text-align: center;
+    padding: 2%;
 }
 
 #redes_sociales {
-    display: block;
-    clear: none;
-    float: left;
-    width: 30%;
+    position: fixed;
+    width: auto;
+    bottom: 0px;
+    right: 0px;
 }
 
 #redes_sociales ul {
     list-style-type: none;
-    padding: 0;
 }
 
 #redes_sociales ul li {
     display: inline;
-    clear: none;
-    float: left;
+    clear: both;
+    float: right;
 
-    padding: 10px;
-
+    padding: 25% 50%;
 }
 
-#redes_sociales ul li a:link {
-    text-decoration: none;
-    color: #ffffff;
+#redes_sociales ul li a i {
+    color: var(--colorSecundario);
+    font-size: 2em;
 }
 
-#redes_sociales ul li a:visited{
-    color: #d0d0d0;
-}
-#redes_sociales ul li a:hover{
-    color: rgb(206, 210, 6);
+#redes_sociales ul li a i:hover {
+    color: var(--colorPrincipalVariante);
 }
