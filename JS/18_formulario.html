@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex;justify-content: space-around;">
+
+    <div>
+        <form action="https://google.com" id="formulario">
+
+            <h1>Datos Personales</h1>
+            <label for="id_nombre">Nombre:</label>
+            <input type="text" name="nombre" id="id_nombre"> <br> <br>
+            <label for="id_email">Email:</label>
+            <input type="text" name="email" id="id_email"> <br> <br>
+            <label for="id_fn">Fecha Nacimiento:</label>
+            <input type="date" name="fechaNacimiento" id="id_fn">
+
+            <h1>Gustos Personales</h1>
+            <input type="checkbox" name="musica" id="pregunta1">
+            <label for="pregunta1">¿Te gusta el pop?</label>
+            <input type="checkbox" name="postre" id="pregunta2">
+            <label for="pregunta2">¿Te gusta el pastel de zanahoria?</label>
+
+            <h1>Opciones</h1>
+            <label for="decision_color">Elige un color</label>
+            <select name="" id="decision_color">
+                <option value="azul">Azul</option>
+                <option value="amarillo">Amarillo</option>
+                <option value="verde">Verde</option>
+                <option value="morado">Morado</option>
+            </select>
+            <br> <br>
+            <button id="enviar" type="submit">
+                Enviar
+            </button>
+        </form>
+
+        </div>
+        <div id="informe"></div>
+    </div>
+
+    <script src="18_formulario.js"></script>
+
+
+
+    
+</body>
+</html>
