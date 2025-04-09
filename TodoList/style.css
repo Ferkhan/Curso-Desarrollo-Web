@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-bg: #000957;
+    --color-primario: #344CB7;
+    --color-secundario: #577BC1;
+    --color-acentuar: #62a2ec;
+    --color-texto: #FFEB00;
+    --color-alerta: rgb(232, 121, 87);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: var(--color-texto);
+}
+
+body {
+    background-color: var(--color-bg);
+    padding: 10px;
+    min-height: 100vh;
+}
+
+h1 {
+    margin: 50px 0;
+    font-size: 4rem;
+    font-weight: 800;
+    font-family: Audiowide, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: var(--color-acentuar);
+}
+
+#envoltura {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#txt_input {
+    padding: 15px 20px;
+    width: 100%;
+    border: 3px solid var(--color-secundario);
+    border-radius: 20px;
+    font: inherit;
+    color: var(--color-texto);
+    background: none;
+    caret-color: var(--color-acentuar);
+}
+
+#txt_input:focus {
+    outline: none;
+}
+
+#formulario_input {
+    position: relative;
+}
+
+#btn_agregar {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 0 25px;
+    height: 100%;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-acentuar);
+    color: var(--color-bg);
+    border-radius: 20px;
+    font: inherit;
+    font-weight: bold;    
+}
+
+#lista_todo {
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+.item_todo {
+    background-color: var(--color-primario);
+    padding: 0 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    min-height: 60px;
+    line-height: 60px;
+}
+
+.check {
+    display: none;
+}
+
+.check_marcador {
+    display: block;
+    clear: none;
+    float: left;
+    width: 10%;
+    text-align: center;
+    color: var(--color-acentuar);
+}
+
+.check_marcador i {
+    font-size: 1.2rem;
+}
+
+.txt_todo {
+    display: block;
+    clear: none;
+    float: left;
+    width: 80%;
+    
+}
+
+.btn_eliminar {
+    display: block;
+    clear: none;
+    float: left;
+    width: 10%;
+    height: 60px;
+    border: none;
+    background: none;
+    cursor: pointer;
+} 
+
+.btn_eliminar i {
+    color: var(--color-secundario);
+    font-size: 1.4rem;
+}
+
+.btn_eliminar:hover {
+    i {
+        color: var(--color-alerta);
+    }
+}
+
+.check:checked ~ .check_marcador i {
+    color: var(--color-alerta);
+}
+
+.check:checked ~ .txt_todo {
+    text-decoration: line-through;
+    color: var(--color-secundario);
+}
+
+
+
